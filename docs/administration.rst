@@ -235,6 +235,18 @@ Lemur supports sending certification expiration notifications through SES and SM
 
             LEMUR_DEFAULT_EXPIRATION_NOTIFICATION_INTERVALS = [30, 15, 2]
 
+Flask-Mail Integration with Lemur
+---------------------------------
+If you are using SMTP and Flask-Mail, then you need the following fields in your configuration file. 
+LEMUR_EMAIL_SENDER = 'SMTP'
+LEMUR_SECURITY_TEAM_EMAIL = ['...']
+LEMUR_DEFAULT_EXPIRATION_NOTIFICATION_INTERVALS = [30, 15, 2]
+MAIL_SERVER = '...'
+MAIL_PORT= NUM
+MAIL_USE_SSL= TRUE/FALSE
+MAIL_USE_TLS= TRUE/FALSE
+MAIL_DEFAULT_SENDER = '...'
+
 
 Authentication Options
 ----------------------
